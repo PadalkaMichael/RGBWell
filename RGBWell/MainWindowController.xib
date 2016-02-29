@@ -7,7 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="RGBWell" customModuleProvider="target">
             <connections>
+                <outlet property="bSlider" destination="dXJ-gs-dIq" id="kc1-oF-tyY"/>
                 <outlet property="colorWell" destination="BQ8-bh-4NV" id="PpO-md-KuT"/>
+                <outlet property="gSlider" destination="gqx-zy-LnY" id="6tg-5W-zzq"/>
+                <outlet property="rSlider" destination="tlN-Bn-uIG" id="F4j-bC-oLv"/>
                 <outlet property="window" destination="Xvn-Db-ydb" id="MMr-VV-Xnh"/>
             </connections>
         </customObject>
@@ -17,13 +20,13 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="2083" y="229" width="480" height="270"/>
-            <rect key="screenRect" x="1920" y="30" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="V1O-Xg-m1c">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlN-Bn-uIG">
-                        <rect key="frame" x="366" y="216" width="96" height="21"/>
+                        <rect key="frame" x="366" y="216" width="96" height="20"/>
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="TrS-kw-hVd"/>
                         <connections>
                             <action selector="adjustRed:" target="-2" id="yVy-hN-rJB"/>
@@ -38,7 +41,7 @@
                         </textFieldCell>
                     </textField>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-zy-LnY">
-                        <rect key="frame" x="366" y="172" width="96" height="21"/>
+                        <rect key="frame" x="366" y="172" width="96" height="20"/>
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="axk-IP-aqi"/>
                         <connections>
                             <action selector="adjustGreen:" target="-2" id="uA8-6G-stR"/>
@@ -53,7 +56,7 @@
                         </textFieldCell>
                     </textField>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-gs-dIq">
-                        <rect key="frame" x="366" y="125" width="96" height="21"/>
+                        <rect key="frame" x="366" y="125" width="96" height="20"/>
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="6Wk-xf-9MV"/>
                         <connections>
                             <action selector="adjustBlue:" target="-2" id="lw0-In-Dc1"/>
